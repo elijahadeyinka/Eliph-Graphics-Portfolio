@@ -1,0 +1,1038 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELIPH GRAPHICS | Creative Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: #f7f9fc;
+  color: #222;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(135deg, rgba(18,27,123,0.95), rgba(76,62,255,0.95)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #9f96ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #b6afff;
+}
+
+.btn {
+  background: #5d4fff;
+  color: white;
+  padding: 13px 28px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(93,79,255,0.3);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: #4638f2;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 40px;
+  padding-top: 70px;
+}
+
+.hero-text h4 {
+  color: #c9c4ff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #ececff;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 13px 28px;
+  border-radius: 8px;
+  color: white;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.wave {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  color: #1b1b4f;
+  margin-bottom: 12px;
+}
+
+.section-title p {
+  color: #666;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  color: #1d1d55;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature-box {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.feature-box h4 {
+  margin: 15px 0 10px;
+  color: #1f1f52;
+}
+
+.services {
+  background: #ffffff;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 25px;
+}
+
+.service-content h3 {
+  margin-bottom: 12px;
+  color: #24245d;
+}
+
+.service-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.cta {
+  background: linear-gradient(135deg, #4d43ff, #1d1d70);
+  color: white;
+  border-radius: 30px;
+  padding: 60px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cta h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.process-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.process-box span {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #5146ff;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.stats {
+  background: linear-gradient(135deg, rgba(18,27,123,0.96), rgba(76,62,255,0.95)), url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.portfolio-item {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 24, 115, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.testimonials {
+  background: #f8f8ff;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.testimonial-card p {
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  align-items: center;
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #1d1d70, #4e45ff);
+  padding: 50px;
+  border-radius: 25px;
+  color: white;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+}
+
+form textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+footer {
+  background: #121240;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 80px;
+}
+
+@media(max-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta {
+    padding: 40px 25px;
+  }
+
+  .cta h2 {
+    font-size: 30px;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: fadeLeft 1s ease forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: fadeRight 1s ease forwards;
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.service-card,
+.feature-box,
+.portfolio-item,
+.testimonial-card,
+.process-box,
+.stat-box {
+  transition: all 0.4s ease;
+}
+
+.service-card:hover,
+.feature-box:hover,
+.portfolio-item:hover,
+.testimonial-card:hover,
+.process-box:hover,
+.stat-box:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+.hero-image img {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.btn,
+.secondary-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before,
+.secondary-btn::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255,255,255,0.15);
+  transition: 0.5s;
+}
+
+.btn:hover::before,
+.secondary-btn:hover::before {
+  width: 100%;
+}
+
+nav {
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-text {
+  animation: fadeLeft 1.2s ease forwards;
+}
+
+.hero-image {
+  animation: fadeRight 1.2s ease forwards;
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(93,79,255,0.05);
+  border-radius: 50%;
+  top: -50px;
+  right: -50px;
+  z-index: -1;
+}
+
+.service-card img,
+.portfolio-item img {
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover img,
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.contact-info {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+  bottom: -120px;
+  right: -100px;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+  top: -120px;
+  left: -80px;
+}
+
+.glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(125,115,255,0.35), transparent 70%);
+  top: -120px;
+  right: -100px;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+  </style>
+</head>
+<body><header>
+  <div class="glow"></div>
+  <div class="container">
+    <nav>
+      <div class="logo">ELIPH <span>GRAPHICS</span></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/2349051675882" class="btn">WhatsApp Us</a>
+      </div>
+    </nav><div class="hero" id="home">
+  <div class="hero-text">
+    <h4>Creative Branding & Digital Solutions</h4>
+    <h1>Professional Graphic Design Agency</h1>
+    <p>
+      ELIPH GRAPHICS creates premium visual experiences for brands, businesses, events and organizations. We deliver professional designs that increase engagement and grow your brand identity.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#services" class="btn">Explore Services</a>
+      <a href="#contact" class="secondary-btn">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Graphics Team">
+  </div>
+</div>
+
+  </div><svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7f9fc" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,176C640,171,800,149,960,133.3C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+</header><section id="about">
+  <div class="container">
+    <div class="about fade-up">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Creative Designers">
+      </div><div class="about-content">
+    <h2>We Create Designs That Elevate Brands</h2>
+    <p>
+      At ELIPH GRAPHICS, we specialize in crafting visually appealing and result-driven designs for businesses and personal brands. From logo identity to social media graphics and website design, we bring your imagination to life.
+    </p>
+
+    <div class="features">
+      <div class="feature-box">
+        <h4>Creative Branding</h4>
+        <p>Modern and unique brand identity solutions.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Fast Delivery</h4>
+        <p>Quick turnaround time with professional quality.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Client Support</h4>
+        <p>Reliable communication and dedicated support.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Affordable Pricing</h4>
+        <p>Premium designs at budget-friendly rates.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section><section class="services" id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Professional Services</h2>
+      <p>
+        We provide exceptional design services tailored to help your brand stand out and make lasting impressions.
+      </p>
+    </div><div class="service-grid fade-up">
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Branding">
+    <div class="service-content">
+      <h3>Brand Identity Design</h3>
+      <p>Professional logos, brand kits and visual identity systems for businesses and startups.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Website Design">
+    <div class="service-content">
+      <h3>Website UI/UX Design</h3>
+      <p>Modern responsive websites and user experiences designed for performance and conversion.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?q=80&w=1200&auto=format&fit=crop" alt="Social Media">
+    <div class="service-content">
+      <h3>Social Media Graphics</h3>
+      <p>Engaging promotional designs, flyers, banners and social media content creation.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Print Design">
+    <div class="service-content">
+      <h3>Print & Packaging</h3>
+      <p>Business cards, brochures, product packaging and premium print-ready materials.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+  <h2>Stay Connected With Creative Excellence</h2>
+  <p>
+    Let ELIPH GRAPHICS help your business stand out with world-class visual branding and creative digital experiences.
+  </p>
+  <a href="https://wa.me/2349051675882" class="btn">Start Your Project</a>
+</div>
+
+  </div>
+</section><section>
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Standard Work Process</h2>
+      <p>
+        We follow a professional and organized workflow to ensure every project is completed with excellence.
+      </p>
+    </div><div class="process-grid fade-up">
+  <div class="process-box">
+    <span>1</span>
+    <h3>Consultation</h3>
+    <p>We understand your goals, brand vision and project requirements.</p>
+  </div>
+
+  <div class="process-box">
+    <span>2</span>
+    <h3>Creative Planning</h3>
+    <p>Our team develops concepts and strategies tailored to your brand.</p>
+  </div>
+
+  <div class="process-box">
+    <span>3</span>
+    <h3>Design Execution</h3>
+    <p>We create professional visuals with attention to detail and quality.</p>
+  </div>
+
+  <div class="process-box">
+    <span>4</span>
+    <h3>Final Delivery</h3>
+    <p>Your completed files are delivered professionally and on time.</p>
+  </div>
+</div>
+
+  </div>
+</section><section class="stats">
+  <div class="container">
+    <div class="stats-grid zoom-in">
+      <div class="stat-box">
+        <h2>500+</h2>
+        <p>Projects Completed</p>
+      </div><div class="stat-box">
+    <h2>300+</h2>
+    <p>Happy Clients</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>5+</h2>
+    <p>Years Experience</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>24/7</h2>
+    <p>Client Support</p>
+  </div>
+</div>
+
+  </div>
+</section><section id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Latest Creative Projects</h2>
+      <p>
+        Explore some of our professional branding and graphic design projects.
+      </p>
+    </div><div class="portfolio-grid fade-up">
+  <div class="portfolio-item">
+    <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop" alt="Project">
+    <div class="portfolio-overlay">
+      <h3>Business Branding</h3>
+      <p>Premium Identity Design</p>
+    </div>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="Project">
+    <div class="portfolio-overlay">
+      <h3>Creative Flyer</h3>
+      <p>Marketing Graphics</p>
+    </div>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="https://images.unsplash.com/photo-1516321310764-8d5d5f1e0b9a?q=80&w=1200&auto=format&fit=crop" alt="Project">
+    <div class="portfolio-overlay">
+      <h3>Website UI Design</h3>
+      <p>Modern Interface</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section><section>
+  <div class="container">
+    <div class="cta fade-up" style="margin-top:0; margin-bottom:80px; background:linear-gradient(135deg,#0f0f5e,#5d4fff);">
+      <h2>Boost Your Brand With Premium Graphics</h2>
+      <p>
+        From social media flyers to complete business branding, ELIPH GRAPHICS helps businesses attract more customers with visually stunning designs.
+      </p>
+      <a href="https://wa.me/2349051675882" class="btn">Order Your Design Now</a>
+    </div><div class="service-grid fade-up">
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1200&auto=format&fit=crop" alt="Advertisement">
+    <div class="service-content">
+      <h3>Business Promotion Designs</h3>
+      <p>Eye-catching marketing graphics and digital campaigns that increase visibility and customer engagement.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Brand Ads">
+    <div class="service-content">
+      <h3>Social Media Advertisement</h3>
+      <p>Professional advert designs optimized for Facebook, Instagram, WhatsApp and online campaigns.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="Marketing">
+    <div class="service-content">
+      <h3>Creative Marketing Campaigns</h3>
+      <p>We create promotional visuals that help brands stand out and convert viewers into customers.</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section><section class="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <h2>What Clients Say About Us</h2>
+      <p>
+        Trusted by businesses, entrepreneurs and organizations for professional design solutions.
+      </p>
+    </div><div class="testimonial-grid fade-up">
+  <div class="testimonial-card">
+    <p>
+      “ELIPH GRAPHICS transformed our brand identity completely. The designs were clean, modern and highly professional.”
+    </p>
+
+    <div class="client">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+      <div>
+        <h4>Daniel Adebayo</h4>
+        <small>Business Owner</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <p>
+      “Their flyer and social media designs boosted our engagement massively. Fast delivery and excellent customer service.”
+    </p>
+
+    <div class="client">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+      <div>
+        <h4>Mercy Johnson</h4>
+        <small>Fashion Brand CEO</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <p>
+      “The website UI/UX was stunning and highly responsive. ELIPH GRAPHICS exceeded our expectations.”
+    </p>
+
+    <div class="client">
+      <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Client">
+      <div>
+        <h4>Samuel Adeoye</h4>
+        <small>Startup Founder</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section><section id="contact">
+  <div class="container">
+    <div class="contact-wrapper fade-up">
+      <div class="contact-info">
+        <h2>Contact ELIPH GRAPHICS</h2><div class="contact-item">
+      <strong>Address:</strong><br>
+      Stadium Area, Lautech Road, Ogbomoso,<br>
+      Oyo State, Nigeria.
+    </div>
+
+    <div class="contact-item">
+      <strong>Phone:</strong><br>
+      09051675882
+    </div>
+
+    <div class="contact-item">
+      <strong>WhatsApp:</strong><br>
+      <a href="https://wa.me/2349051675882">Chat on WhatsApp</a>
+    </div>
+
+    <div class="contact-item">
+      <strong>Email:</strong><br>
+      eliphgraphics1@gmail.com
+    </div>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Subject">
+    <textarea placeholder="Write your message..."></textarea>
+    <button type="submit" class="btn" style="border:none; cursor:pointer;">Send Message</button>
+  </form>
+</div>
+
+  </div>
+</section><section>
+  <div class="container">
+    <div class="cta fade-up" style="background:linear-gradient(135deg,#4e45ff,#1a1a6b);">
+      <h2>Need A Professional Website Or Flyer?</h2>
+      <p>
+        ELIPH GRAPHICS delivers modern websites, event flyers, logos, banners, branding packages and premium visual content tailored to your business.
+      </p>
+      <div class="hero-buttons" style="justify-content:center; margin-top:20px;">
+        <a href="https://wa.me/2349051675882" class="btn">Chat on WhatsApp</a>
+        <a href="mailto:eliphgraphics1@gmail.com" class="secondary-btn">Send Email</a>
+      </div>
+    </div>
+  </div>
+</section><footer>
+  <div class="container">
+    <p>© 2026 ELIPH GRAPHICS. All Rights Reserved. Designed Professionally.</p>
+  </div>
+</footer></body>
+</html>
